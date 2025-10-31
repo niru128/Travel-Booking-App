@@ -1,4 +1,7 @@
+
 🌍 Travel Booking App
+
+
 A full-stack Travel Experience Booking Platform that allows users to explore destinations, view experience details, and complete bookings through a seamless and interactive UI.
 
 This project is built using the MERN Stack (MongoDB, Express.js, React, Node.js) and hosted live for review.
