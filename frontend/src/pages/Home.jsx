@@ -48,11 +48,11 @@ const Home = ({searchQuery}) => {
 
     return (
 
-        <div className='pt-5 px-[124px] pb-10'>
+        <div className='pt-5 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[124px] pb-'>
             {filtered.length === 0 ? (
-                <div className="text-center text-gray-500">No experiences found.</div>
+                <div className="text-center text-gray-500 text-sm sm:text-base">No experiences found.</div>
             ) : (
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
                     {filtered.map((e) => (
                         <ExperienceCard key={e._id} experience={e} />
                     ))}
