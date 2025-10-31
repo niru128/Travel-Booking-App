@@ -1,86 +1,116 @@
+# BookIt: Experiences & Slots - Fullstack Booking Application
 
-🌍 Travel Booking App
+## Overview
+BookIt is a fullstack web application designed for booking travel experiences. Users can browse available experiences, view details and slots, and complete bookings through a seamless, responsive interface. The project demonstrates practical fullstack workflows, API integration, and clean UI design matching the provided Figma prototype.
 
+---
 
-A full-stack Travel Experience Booking Platform that allows users to explore destinations, view experience details, and complete bookings through a seamless and interactive UI.
+## Features
 
-This project is built using the MERN Stack (MongoDB, Express.js, React, Node.js) and hosted live for review.
-🚀 Live Demo
-https://travel-booking-app-beta.vercel.app/
-🧭 Features
-•	Browse curated travel experiences
-•	Search experiences by location or keyword
-•	View detailed experience descriptions
-•	Secure booking flow — from browse → checkout → confirmation
-•	Responsive, modern UI built with React + TailwindCSS
-•	Hosted on Render (backend) and Vercel (frontend)
-•	Uses royalty-free images from Unsplash / Pexels
-🛠️ Tech Stack
-Frontend: React.js, React Router DOM, Axios, TailwindCSS
-Backend: Node.js, Express.js, MongoDB (Mongoose), CORS, dotenv
-Deployment: Frontend → Vercel, Backend → Render, Database → MongoDB Atlas
-⚙️ Setup Instructions
-1️⃣ Clone the repository:
+### Frontend
+- Developed with **React + JavaScript** (Vite recommended)
+- Styled exclusively with **TailwindCSS**
+- Pages:
+  - **Home Page:** List experiences, fetch data dynamically
+  - **Details Page:** Show experience details with available dates and slots
+  - **Checkout Page:** Collect user info, apply promo codes, display pricing
+  - **Result Page:** Show confirmation or failure messages
+- Fully responsive, mobile-friendly UI
+- User-friendly feedback (loading states, success, failure)
+- Minimal form validation (email, name, etc.)
+- Consistent spacing, typography, and color schemes based on Figma design
 
-git clone https://github.com/niru128/travel-booking-app.git
-cd travel-booking-app
-2️⃣ Install dependencies:
+### Backend
+- Built with **Node.js + Express**
+- Data stored in **MongoDB** (or PostgreSQL/MySQL if preferred)
+- API Endpoints:
+  - `GET /experiences` — List all experiences
+  - `GET /experiences/:id` — Experience details, slots
+  - `POST /bookings` — Store bookings
+  - `POST /promo/validate` — Promo code validation
+- Data validation and protection against double-booking
+- Validation flow for booking and promo codes
 
-For backend:
-cd backend
+### Integration
+- Fetch experiences, experience details, and booking data using Axios
+- Dynamic data handling, clean state management with React hooks
+- Hosted on cloud platforms like **Vercel** or **Render**
+- Live demo and GitHub repository link provided
+
+---
+
+## Setup & Installation
+
+### Frontend
+1. Clone the repository:
+git clone https://github.com/niru128/Travel-Booking-App
+
+text
+2. Navigate into project directory:
+cd Bookit-frontend
+
+text
+3. Install dependencies:
 npm install
 
-For frontend:
-cd ../frontend
-npm install
-3️⃣ Environment Variables:
-Create a .env file in the backend folder:
-
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-AUTH_SECRET=your_jwt_secret
-4️⃣ Run locally:
-
-Start backend:
-cd backend
-npm start
-
-Start frontend:
-cd ../frontend
+text
+4. Run locally:
 npm run dev
 
+text
 
-🌐 Deployment
-Backend (Render):
-1. Push your backend folder to GitHub
-2. Create a new Render Web Service
-3. Build command → npm install
-4. Start command → node server.js
-5. Add environment variables
-6. Deploy 🚀
-Frontend (Vercel):
-1. Push your frontend folder to GitHub
-2. Import project in Vercel
-3. Add environment variable: VITE_API_URL=https://travel-booking-app-79zg.onrender.com/api
-4. Deploy 🚀
-   
-🧩 API Endpoints
-Method	Endpoint	Description
-GET	/api/experiences	Fetch all experiences
-GET	/api/experiences/:id	Fetch single experience details
-POST	/api/checkout/:id	Create booking
-GET	/api/booking-confirmed	Confirm booking
+### Backend
+1. Clone the backend repo or integrate it within the project
+2. Install dependencies:
+npm install
 
+text
+3. Configure environment variables (`.env`) for database URI and other keys
+4. Start server:
+npm start
 
-🖼️ Data & Assets
-All experience data and images used are freely available from Unsplash (https://unsplash.com) and Pexels (https://pexels.com).
-💡 Future Enhancements
-•	Add user authentication (JWT-based)
-•	Integrate payment gateway (Stripe/Razorpay)
-•	Add booking history and profile management
-•	Admin dashboard for managing experiences
+text
 
-📬 Contact
-Developer: Niranjan C B
-Email: nirubasavaraj2002@gmail.com
-GitHub: https://github.com/niru128
+---
+
+## Hosting & Deployment
+- Deploy backend on **Render** and frontend on **Vercel**
+
+---
+
+## Design & UI
+- Match the Figma design exactly, utilizing TailwindCSS for typography, spacing, and colors
+- Responsive across all devices
+- Clear component states, loading indicators, and feedback messages
+
+---
+
+## Data & Content
+- Use placeholder experience data or royalty-free images from Unsplash/Pexels
+- Ensure promo codes like SAVE10, FLAT100 are supported and validated on backend
+
+---
+
+## Final Notes
+- Include setup instructions, hosted links, and repository URL in the final submission
+- Secure environment variables (API keys, database connection strings)
+- Prevent double booking by slot validation on backend
+- Provide clear user feedback on booking success or failure
+
+---
+
+## License
+This project is for educational/testing purposes and can be adapted or extended.
+
+---
+
+## References:
+- Figma Design: https://www.figma.com/design/8X6E1Ev8YdtZ3erV0Iifvb/HD-booking?node-id=0
+- Inspired by common fullstack booking app patterns
+
+---
+
+## Contact
+For further questions or feature requests, contact
+Niranjan C B
+nirubasavaraj2002@gmail.com
