@@ -48,6 +48,8 @@ npm start
 Start frontend:
 cd ../frontend
 npm run dev
+
+
 🌐 Deployment
 Backend (Render):
 1. Push your backend folder to GitHub
@@ -62,36 +64,14 @@ Frontend (Vercel):
 3. Add environment variable: VITE_API_URL=https://travel-booking-app-79zg.onrender.com/api
 4. Deploy 🚀
    
-📁 Folder Structure
-
-travel-booking-app/
-│
-├── backend/
-|__ src
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   ├── server.js
-│   ├── .env
-│   └── package.json
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── public/
-│   └── package.json
-│
-└── README.md
-
 🧩 API Endpoints
 Method	Endpoint	Description
 GET	/api/experiences	Fetch all experiences
 GET	/api/experiences/:id	Fetch single experience details
 POST	/api/checkout/:id	Create booking
 GET	/api/booking-confirmed	Confirm booking
+
+
 🖼️ Data & Assets
 All experience data and images used are freely available from Unsplash (https://unsplash.com) and Pexels (https://pexels.com).
 💡 Future Enhancements
