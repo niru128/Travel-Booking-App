@@ -127,7 +127,7 @@ const Detail = () => {
           </div>
         </div>
 
-        <div className="w-[387px] h-fit bg-[#F9F9F9] rounded-xl p-6 flex flex-col justify-between border border-gray-200 shadow-sm">
+        <div className="w-[387px] h-[303px] bg-[#F9F9F9] rounded-xl p-6 flex flex-col justify-between border border-gray-200 shadow-sm">
           <div className="flex flex-col gap-5">
             {/* Price header */}
             <div className="flex justify-between items-center">
@@ -135,7 +135,7 @@ const Detail = () => {
               <p className="font-semibold text-[18px] text-[#161616]">₹{experience.pricePerPerson}</p>
             </div>
 
-            {/* Quantity selector */}
+            
             <div className="flex justify-between items-center">
               <p className="text-[#6C6C6C] text-[14px]">Quantity</p>
               <div className="flex items-center gap-2">
