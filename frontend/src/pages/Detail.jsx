@@ -127,7 +127,7 @@ const Detail = () => {
           </div>
         </div>
 
-        <div className="absolute top-[155px] left-[929px] w-[387px] h-[303px] bg-[#EFEFEF] rounded-xl p-6 space-y-6">
+        <div className="w-[387px] h-[303px] bg-[#EFEFEF] rounded-xl p-6 space-y-6">
           <div className="flex flex-col w-[339px] h-[187px] gap-4">
             {/* Price header */}
             <div className="flex justify-between items-center">
