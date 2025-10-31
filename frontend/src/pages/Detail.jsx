@@ -127,8 +127,8 @@ const Detail = () => {
           </div>
         </div>
 
-        <div className="w-[420px] h-[303px] bg-[#F9F9F9] rounded-xl p-6 flex flex-col justify-between border border-gray-200 shadow-sm">
-          <div className="flex flex-col gap-5">
+        <div className="absolute top-[155px] left-[929px] w-[387px] h-[303px] bg-[#EFEFEF] rounded-xl p-6 space-y-6">
+          <div className="flex flex-col w-[339px] h-[187px] gap-4">
             {/* Price header */}
             <div className="flex justify-between items-center">
               <p className="text-[#6C6C6C] text-[14px]">Starts at</p>
@@ -173,7 +173,7 @@ const Detail = () => {
           </div>
 
           {/* Confirm Button */}
-          <button onClick={handleBooking} disabled={!selectedDate || !selectedTime} className={`mt-6 w-full py-3 rounded-lg font-semibold transition ${selectedDate && selectedTime ? "bg-[#FFD643] text-[#161616] hover:bg-amber-300 cursor-pointer" : "bg-gray-300 text-[#161616] cursor-not-allowed"}`} >
+          <button onClick={handleBooking} disabled={!selectedDate || !selectedTime} className={`w-[339px] h-11 px-5 py-3 rounded-lg font-semibold transition ${selectedDate && selectedTime ? "bg-[#FFD643] text-[#161616] hover:bg-amber-300 cursor-pointer" : "bg-gray-300 text-[#161616] cursor-not-allowed"}`} >
             Confirm
           </button>
         </div>
